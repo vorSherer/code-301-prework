@@ -1,6 +1,6 @@
 ## Code 301 Pre-work: Intermediate Software Development
 
-### Required Computer Setup
+### Computer Setup
 
 ### Install Atom
 
