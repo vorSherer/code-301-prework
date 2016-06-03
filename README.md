@@ -96,7 +96,7 @@ Linter and linter-eslint should be on that list, like in this screen shot:
  
  _Navigate within your terminal to your Projects folder (or an equivalent, familiar, and easy to access folder)._
  
-1.  `mkdir 301` - this will be your parent folder to house your **fork** of the class repo.
+1.  `mkdir 301` - this will be your parent folder to house your **fork** of the class lectures repo, as well as each individual lab repo.
 2.  `cd 301`
 3.  `mkdir lectures-repo`
 3.  `mkdir lab-assignments`
