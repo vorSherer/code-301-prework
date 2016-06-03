@@ -1,12 +1,12 @@
-## Code 301 Pre-work: Intermediate Software Development
+# Code 301 Pre-work: Intermediate Software Development
 
-### Computer Setup
+## Computer Setup
 
-### Install Atom
+## Install Atom
 
-If you haven't already, install [Atom](https://atom.io). If you have used an advanced text editor like Sublime Text, then Atom will feel familiar to you. Atom is free, open-source, cross-platform, and has a wide array of useful plug-ins available. Please use Atom during Code 301. (And yes...if you are proficient with another text editor that you *love*, you may use that instead)
+If you haven't already, install [Atom](https://atom.io). If you have used an advanced text editor like Sublime Text, then Atom will feel familiar to you. Atom is free, open-source, cross-platform, and has a wide array of useful plug-ins available. Please use Atom during Code 301. (If you are proficient with another text editor that you *love*, you may use that instead)
 
-[Atom's documentation](https://atom.io/docs/latest) is top-notch. Review it now to familiarize yourself with the basics. Make sure you're looking at the docs for the latest version.
+[Atom's documentation](https://atom.io/docs/latest) is top-notch. Review it now to familiarize yourself with the basics. Make sure you're looking at the docs for the latest version. If you find that you are unable to call atom in the terminal, you may need to enable shell commands through Atom by first opening it through your graphical desktop interface, and selecting `Install Shell Commands` in the drop-down menu.
 
 ## Install Node
 
@@ -53,7 +53,7 @@ You should get a response that says "works". If not, try reinstalling Node again
 
 Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your Terminal (Git Bash on Windows) and enter:
 
-`npm -g i eslint live-server`
+`npm -g i eslint live-server git-open`
 
 You should see a lot of feedback as it installs.
 
@@ -83,13 +83,37 @@ For this next part, you will have Atom's package manager **apm** install some pa
 You should get two success messages while it installs the linter and linter-eslint packages.
 
 ### Verify the Atom packages installation
+
 Enter the following into your Terminal:
 
-`apm ls`
+`apm ls`  
+You should get back a long list, and at the end you should receive a list of packages you installed for Atom.   
+Linter and linter-eslint should be on that list, like in this screen shot:
 
- ![](http://i.imgur.com/Jlv6LeP.png)
-
- You should get a long list and at the end you should get a list of packages you installed for Atom. Linter and linter-eslint should be on that list.
+ ![screen shot 2016-05-28 at 11 33 31 pm](https://cloud.githubusercontent.com/assets/12869788/15631728/a816191c-252c-11e6-8cb4-5c757f240a50.png)
+ 
+##Create and setup your 301 directory structure
+ 
+ - Navigate within your terminal to your Projects folder (or an equivalent, familiar, and easy to access folder).
+ 
+1.  `mkdir 301` - this will be your parent folder to house your **fork** of the class repo.
+2.  `cd 301`
+3.  `mkdir lectures-repo`
+3.  `mkdir lab-assignments`
+4.  `cd lecture-repo`
+4.  While you are here on GitHub, let's fork this repository. Yes, **this** repo you are currently on! Click on the `Fork` button, and on the resulting page copy the URL link of your brand new fork.
+5.  Back in the terminal, make sure you are in the `lectures-repo` folder and `git clone THE-URL-YOU-JUST-COPIED lecture-301` (where `THE-URL-YOU-JUST-COPIED` is the URL of your forked repo you just copied. The last argument ('lecture-301') changes the display name of the repository.
+6.  After the cloning completes, `cd` into this repo.
+7.  Type `git remote add upstream https://github.com/codefellows/seattle-301d7.git` to enable quick access to future updates.
+7.  Type `git remote -v` to verify that your `origin` remote points to your GitHub account's forked 301 repo, and that your `upstream` remote points to the codefellows account.
+8.  `cd lab-assignments`
+9.  `mkdir my-forked-labs`
+10.  `mkdir partners-forked-labs`
+5.  We highly value pair programming! On days where you begin as the navigator, you will clone your **partner's** lab assignment into the `partners-forked-labs` directory when it is your turn to be the driver.
+6.  `cd my-forked-labs`
+7.  Back here on GitHub, head to the separate GitHub site where all lab assignments can be found: https://github.com/codefellows-seattle-301d7
+8.  You may fork and clone the available repos into your `my-forked-labs` folder. These repositories will periodically be added/updated throughout the course. Therefore:
+9.  Be sure to add the `upstream` remote for each one with git:  
+https://help.github.com/articles/configuring-a-remote-for-a-fork/
 
 Congrats! You're all done.
-
