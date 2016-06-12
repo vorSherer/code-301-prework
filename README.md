@@ -16,7 +16,7 @@ If you haven't already, install [Atom](https://atom.io). If you have used an adv
 
   To install Node, open your Terminal, and copy and paste the following line, then hit Enter:
   
-  `apt-get install nodejs`
+  `sudo apt-get install nodejs`
   
   If this did not work, try the following:
 
