@@ -28,7 +28,7 @@ If you haven't already, install [Atom](https://atom.io). If you have used an adv
   
   If, once again, you did not achieve success, try [these instructions to build from source](https://gist.github.com/toastynerd/d3e563522977f6750c32).
   
-  
+  Finally, `sudo apt install npm`
 
 #### Mac instructions
 
