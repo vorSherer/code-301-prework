@@ -91,18 +91,5 @@ You should get back a long list, and at the end you should receive a list of pac
 Linter and linter-eslint should be on that list, like in this screen shot:
 
  ![screen shot 2016-05-28 at 11 33 31 pm](https://cloud.githubusercontent.com/assets/12869788/15631728/a816191c-252c-11e6-8cb4-5c757f240a50.png)
- 
-##Create and setup your 301 directory structure
- 
- _Navigate within your terminal to your Projects folder (or an equivalent, familiar, and easy to access folder)._
- 
-1.  `mkdir 301` - this will be your parent folder to house your **fork** of the class lectures repo, as well as each individual lab repo.
-2.  `cd 301`
-3.  `mkdir lectures-repo`
-3.  `mkdir lab-assignments`
-8.  `cd lab-assignments` - then:
-9.  `mkdir my-forked-labs`
-10.  `mkdir partners-forked-labs`
-5.  We highly value pair programming! On days where you begin as the navigator, you will clone your **partner's** lab assignment into the `partners-forked-labs` directory when it is your turn to be the driver.
 
-Congrats! You're all done.
+Congrats! You're all done. Well, exccept for your class-specific directory instructions :wink:
