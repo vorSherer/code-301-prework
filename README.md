@@ -134,7 +134,7 @@ Now that Postgres is installed, you should be able to create some databases to u
 
 ```
 createdb -U USERNAME kilovolt
-createdb -U USERNAME kilovolt
+createdb -U USERNAME portfolio
 ```
 
 These commands should run without an error. 
