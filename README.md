@@ -126,6 +126,18 @@ You should have already verified during the Node installation that you have Home
 To install PostgreSQL, open your Terminal, and enter:
 `brew install postgresql`
 
+This will create a user for you, that matches your logged in user account. Run the `whoami` command in the terminal if you aren't sure what that is. This user has a blank password set as the default.
+
+### Create some databases
+
+Now that Postgres is installed, you should be able to create some databases to use in the class. From a command prompt, run these commands, utilizing the username and password form your set up. :
+
+```
+createdb -U USERNAME kilovolt
+createdb -U USERNAME kilovolt
+```
+
+These commands should run without an error. 
 ----
 
 Congrats! You're all done. Well, except for your class-specific directory instructions :wink:
