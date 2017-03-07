@@ -38,7 +38,7 @@ If you haven't already, install [Atom](https://atom.io). If you have used an adv
 
   To install Node, open your Terminal, and enter:
 
-  `brew install node`
+  `brew update && brew install node`
 
 #### Windows instructions
 
@@ -124,7 +124,7 @@ Follow the download and installation instructions on this page for your Linux di
 You should have already verified during the Node installation that you have Homebrew installed. Please see that section above for more details if not.
 
 To install PostgreSQL, open your Terminal, and enter:
-`brew install postgresql`
+`brew update && brew install postgresql`
 
 This will create a user for you, that matches your logged in user account. Run the `whoami` command in the terminal if you aren't sure what that is. This user has a blank password set as the default.
 
