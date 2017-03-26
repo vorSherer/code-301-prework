@@ -115,7 +115,7 @@ Follow the download and installation instructions on this page: [Installing Post
 
 #### Linux
 
-Follow the download and installation instructions on this page for your Linux distribution: [Installing Postgresql](https://www.postgresql.org/download/)
+Follow the download and installation instructions on this page for your Linux distribution: [Installing Postgresql](https://www.postgresql.org/download/). Take note: when you get to the point of entering a command to do an installation, make sure to change the version from 9.4 to 9.5 in the command if needed.
 
 - If asked to provide or set a username and password, **be sure to document the username and password**, as you will need them later in the course.
 
