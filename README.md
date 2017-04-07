@@ -104,7 +104,7 @@ For both Windows and Linux users, please follow the default installation instruc
 
 *For reference, these instructions are taken from the following documentation: http://www.postgresqltutorial.com/install-postgresql/*
 
-**NOTE: If you are running Windows 8 or 10, you need to create a Windows users with administrator role e.g., postgres and use this user to run the installation file.**
+**NOTE: If you are running Windows 8 or 10, you need to create a Windows user with administrator role e.g., postgres and use this user to run the installation file.**
 
 - Your **Default** database super user is: *postgres*
 - You will be asked to enter and confirm a database password.
