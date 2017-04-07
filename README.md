@@ -183,10 +183,10 @@ Now, whenever you first start up your computer, you just have to run `pgstart` t
   - For Mac, run your new `pgstart` alias, then type `psql`
   - For Windows, open up your psql program (SQL Shell)
   - For Linux, run `sudo -u postgres psql`
-1. You should be at a prompt that looks like `postgres=#`
-1. Enter the following command: `CREATE DATABASE kilovolt;`. *Note the semicolon. If you forget it, your prompt will go to a new line and look like* `postgres-#`. *This means you have an unterminated command and the prompt will just keep going to new lines until you enter a semicolon*.
+2. You should be at a prompt that looks like `postgres=#`
+3. Enter the following command: `CREATE DATABASE kilovolt;`. *Note the semicolon. If you forget it, your prompt will go to a new line and look like* `postgres-#`. *This means you have an unterminated command and the prompt will just keep going to new lines until you enter a semicolon*.
   - You should receive the feedback "CREATE DATABASE".
-1. Now enter: `CREATE DATABASE portfolio;`. This should mirror the above step.
-1. Verify that your databases were created by running `\l` (no semicolon). You should see a list of databases, including `kilovolt` and `portfolio`. You should be able to connect to a database by running `\c DATABASE_NAME`, e.g. `\c kilovolt` or `\c portfolio`.
+4. Now enter: `CREATE DATABASE portfolio;`. This should mirror the above step.
+5. Verify that your databases were created by running `\l` (no semicolon). You should see a list of databases, including `kilovolt` and `portfolio`. You should be able to connect to a database by running `\c DATABASE_NAME`, e.g. `\c kilovolt` or `\c portfolio`.
 
 Congrats! You're all done. Well, except for your class-specific directory instructions :wink:
