@@ -20,17 +20,11 @@ If you haven't already, install [Atom](https://atom.io). If you have used an adv
 
   `sudo apt-get install nodejs`
 
-  If this did not work, try the following:
+  Afterwards, you'll want to install Node Package Manager (NPM).
 
-  `curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -`
+  `sudo apt-get install npm`
 
-  It will churn away for a while, and then once it's done you can run the following command:
-
-  `sudo apt-get install nodejs`
-
-  If, once again, you did not achieve success, try [these instructions to build from source](https://gist.github.com/toastynerd/d3e563522977f6750c32).
-
-  Finally, `sudo apt-get install npm`
+  If you run into issues trying to install Node from these steps, please contact your instructor.
 
 #### Mac instructions
 
@@ -130,7 +124,7 @@ This will create a user for you, that matches your logged in user account. Run t
 
 ### Startup and Create some databases
 
-Read the output of the above installation instructions carefully. It should tell you what you need to do, in order to start Postgres. There might be 2 different options (one to start it automatically, one to start it manually). Pick one, and run the command. Once again, read the output of the command. If postgres is running correctly, the `psql` command should run without error and put you into a `pg>` prompt. 
+Read the output of the above installation instructions carefully. It should tell you what you need to do, in order to start Postgres. There might be 2 different options (one to start it automatically, one to start it manually). Pick one, and run the command. Once again, read the output of the command. If postgres is running correctly, the `psql` command should run without error and put you into a `pg>` prompt.
 
 Now that Postgres is running, you should be able to create some databases to use in the class. From a command prompt, run these commands, utilizing the username and password form your set up. :
 
