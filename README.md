@@ -12,11 +12,11 @@ If you haven't already, install [Atom](https://atom.io). If you have used an adv
 
 ## Install Node
 
-*Note* If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`.
+*Note*: If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`.
 
 #### Linux instructions
 
-  To install Node, open your Terminal, and copy and paste the following line, then hit Enter:
+  To install Node, open your Terminal and copy and paste the following line, then hit Enter:
 
   `sudo apt-get install nodejs`
 
