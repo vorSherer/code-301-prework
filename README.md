@@ -138,9 +138,21 @@ When you installed PostgreSQL, the installer also installed some extra tools. On
 
 #### Linux
 
-Follow the download and installation instructions on this page for your Linux distribution: [Installing Postgresql](https://www.postgresql.org/download/)
+*For reference, these instructions are taken from the following documentation: https://www.postgresql.org/download/*
 
 - If asked to provide or set a username and password, **be sure to document the username and password**, as you will need them later in the course.
+- `sudo apt-get install postgresql`
+- You will be prompted with the message that a certain amount of disk space will be used and asked if this is OK. Type `y`, then hit enter.
+- Several commands will automatically run, this may take a few minutes.
+- **You will likely NOT be prompted for a default username or password.** You will need to set one in psql if this is the case.
+
+**Verifying Installation And Setting A Password**
+- You should be able to run the command `sudo -u postgres psql`. You will be asked for your administrator password - this is what you usually enter when you run `sudo` commands. This will log you into the psql prompt as the user postgres.
+- You should now have a prompt that looks like `postgres=#`. You can run SQL commands from here, which must end in semicolons.
+- If you were not prompted for a default user or password, we will set one using psql. If you type `\du`, you can get a list of users associated with PostgreSQL. You should see a single user, `postgres`. In order to give this user a password, enter the following command: `ALTER ROLE postgres PASSWORD 'your-password-here';`, replacing "your-password-here" with whatever you want it to be. Remember that your password must be wrapped in quotes. *Don't forget the semicolon*.
+- If successful, you will receive the feedback `ALTER ROLE`.
+
+**If you are having issues with installation, please contact your instructor.**
 
 #### MacOS
 
@@ -151,18 +163,30 @@ To install PostgreSQL, open your Terminal, and enter:
 
 This will create a user for you, that matches your logged in user account. Run the `whoami` command in the terminal if you aren't sure what that is. This user has a blank password set as the default.
 
+*You will need to run this command whenever you first start your computer and open up the terminal in order to start your Postgres server:*
+
+`pgstart='pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start'`
+
+Since that's rather verbose, we can set it as an alias!
+
+`alias pgstart='pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start'`
+
+However, aliases are temporary. You would need to set that alias each time you opened up a new terminal window. Instead, we can tell our system to always set that alias whenever a terminal is opened. Find your **.bashrc** or **.bash_profile** file - it will probably be in your home (~) directory. Run `atom .bashrc` or `atom .bash_profile` to open it up, then on a new line, paste this in:
+
+`alias pgstart='pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start'`
+
+Now, whenever you first start up your computer, you just have to run `pgstart` to get your Postgres server running.
+
 ### Startup and Create some databases
 
-Read the output of the above installation instructions carefully. It should tell you what you need to do, in order to start Postgres. There might be 2 different options (one to start it automatically, one to start it manually). Pick one, and run the command. Once again, read the output of the command. If postgres is running correctly, the `psql` command should run without error and put you into a `pg>` prompt.
-
-Now that Postgres is running, you should be able to create some databases to use in the class. From a command prompt, run these commands, utilizing the username and password form your set up. :
-
-```
-createdb -U USERNAME kilovolt
-createdb -U USERNAME portfolio
-```
-
-These commands should run without an error (or any feedback really). If a message does print, read it carefully and use the info to troubleshoot.  
-----
+1. Login to psql.
+  - For Mac, run your new `pgstart` alias, then type `psql`
+  - For Windows, open up your psql program (SQL Shell)
+  - For Linux, run `sudo -u postgres psql`
+1. You should be at a prompt that looks like `postgres=#`
+1. Enter the following command: `CREATE DATABASE kilovolt;`. *Note the semicolon. If you forget it, your prompt will go to a new line and look like* `postgres-#`. *This means you have an unterminated command and the prompt will just keep going to new lines until you enter a semicolon*.
+  - You should receive the feedback "CREATE DATABASE".
+1. Now enter: `CREATE DATABASE portfolio;`. This should mirror the above step.
+1. Verify that your databases were created by running `\l` (no semicolon). You should see a list of databases, including `kilovolt` and `portfolio`. You should be able to connect to a database by running `\c DATABASE_NAME`, e.g. `\c kilovolt` or `\c portfolio`.
 
 Congrats! You're all done. Well, except for your class-specific directory instructions :wink:
