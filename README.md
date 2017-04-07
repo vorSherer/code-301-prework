@@ -177,7 +177,7 @@ However, aliases are temporary. You would need to set that alias each time you o
 
 Now, whenever you first start up your computer, you just have to run `pgstart` to get your Postgres server running.
 
-### Startup and Create some databases
+## ALL USERS: Startup and Create some databases
 
 1. Login to psql.
   - For Mac, run your new `pgstart` alias, then type `psql`
