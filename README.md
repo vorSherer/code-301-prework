@@ -97,15 +97,44 @@ Linter and linter-eslint should be on that list, like in this screen shot:
 ## Install PostgreSQL Database Software
 *Please note that if you have a previously installed version of PostgreSQL on any operating system, you should be aware of any username and password that you've set for that installation. If you're unsure please uninstall and reinstall a fresh copy, which will also install the latest stable version.*
 
+
 For both Windows and Linux users, please follow the default installation instructions taking care not to change values such as the default port numbers (You may be prompted to change them, but should also be given default values).
 
 #### Windows
 
-Follow the download and installation instructions on this page: [Installing Postgresql](http://www.postgresqltutorial.com/install-postgresql)
+*For reference, these instructions are taken from the following documentation: http://www.postgresqltutorial.com/install-postgresql/*
+
+**NOTE: If you are running Windows 8 or 10, you need to create a Windows users with administrator role e.g., postgres and use this user to run the installation file.**
 
 - Your **Default** database super user is: *postgres*
 - You will be asked to enter and confirm a database password.
 - **Be sure you document your default user and password**, as you will need them later in the course. We are working securely on your computer, so a simple password like `1234` will suffice, and there's no need to change the default user.
+
+**There are three steps to complete the PostgreSQL installation**:
+
+1. Download PostgreSQL installer for Windows
+1. Install PostgreSQL
+1. Verify the installation
+
+**Downloading the installer**
+
+- Go to the PostgreSQL [official website](http://www.postgresql.org/download/windows/).
+- Click on the [download installer from EnterpriseDB](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#windows). Choose the latest version to download. It takes a few minutes to complete the download.
+
+**Installing**
+
+Double click on the installer file. An installation wizard will appear and guide you through multiple steps where you can choose different options that you would like to have in PostgreSQL. For now, just select default values.
+
+**Verify Installation**
+
+When you installed PostgreSQL, the installer also installed some extra tools. One of them is psql (it may be called SQL Shell).
+
+- Launch psql.
+- When it prompts you for input, just hit enter to select default values until it asks for a password. You will put in the password you entered during installation.
+- You should have a window that [looks like this](http://www.postgresqltutorial.com/wp-content/uploads/2012/08/psql.png).
+- In this window, you can enter SQL statements, which must all end with semicolons. Congratulations, you've installed correctly!
+
+**If you are having issues with the installation, please contact your instructor.**
 
 #### Linux
 
