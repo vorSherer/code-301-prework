@@ -100,7 +100,7 @@ Linter and linter-eslint should be on that list, like in this screen shot:
 
 For both Windows and Linux users, please follow the default installation instructions taking care not to change values such as the default port numbers (You may be prompted to change them, but should also be given default values).
 
-#### Windows
+### Windows
 
 *For reference, these instructions are taken from the following documentation: http://www.postgresqltutorial.com/install-postgresql/*
 
@@ -136,7 +136,7 @@ When you installed PostgreSQL, the installer also installed some extra tools. On
 
 **If you are having issues with the installation, please contact your instructor.**
 
-#### Linux
+### Linux
 
 *For reference, these instructions are taken from the following documentation: https://www.postgresql.org/download/*
 
@@ -154,7 +154,7 @@ When you installed PostgreSQL, the installer also installed some extra tools. On
 
 **If you are having issues with installation, please contact your instructor.**
 
-#### MacOS
+### MacOS
 
 You should have already verified during the Node installation that you have Homebrew installed. Please see that section above for more details if not.
 
