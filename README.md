@@ -165,7 +165,7 @@ This will create a user for you, that matches your logged in user account. Run t
 
 *You will need to run this command whenever you first start your computer and open up the terminal in order to start your Postgres server:*
 
-`pgstart='pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start'`
+`pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start`
 
 Since that's rather verbose, we can set it as an alias!
 
