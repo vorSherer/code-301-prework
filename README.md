@@ -1,16 +1,25 @@
 # Code 301 Pre-work: Intermediate Software Development
 
-## Computer Setup
+To get your laptop and yourself ready for the start of Code 301, there are a series of pre-work tasks to complete. They are all listed in this document.
 
-## Install Atom
+ Note that these tasks have a corresponding assignment to submit in your Canvas course, but be aware that at the time you receive the link to this pre-work that the Canvas course may not yet be published, depending upon the timing of Admissions processes and when class begins. Typically, Canvas courses are published 5-7 days before class begins.
+
+## Customize Canvas (Canvas assignment)
+
+You will not be able to complete this assignment until the Canvas course is published; the details for fulfilling this assignment are located there.
+
+## Setup of Your Laptop Dev Environment (Canvas assignment)
+
+Completion of the following setup tasks are all to be submitted in a single Canvas assignment. Keep a log of any errors or difficulties you encounter, and include those with your submission.
+
+### Install Atom
 
 If you haven't already, install [Atom](https://atom.io). If you have used an advanced text editor like Sublime Text, then Atom will feel familiar to you. Atom is free, open-source, cross-platform, and has a wide array of useful plug-ins available. Please use Atom during Code 301. (If you are proficient with another text editor that you *love*, you may use that instead, but please note that your instructional team may not be able to assist with debugging any issues with your editor)
 
 [Atom's documentation](https://atom.io/docs/latest) is top-notch. Review it now to familiarize yourself with the basics. Make sure you're looking at the docs for the latest version. If you find that you are unable to call atom in the terminal, you may need to enable shell commands through Atom by first opening it through your graphical desktop interface, and selecting `Install Shell Commands` in the drop-down menu.
 
-----
 
-## Install Node
+### Install Node
 
 *Note*: If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`.
 
@@ -38,7 +47,7 @@ If you haven't already, install [Atom](https://atom.io). If you have used an adv
 
   To install Node, go [here](https://nodejs.org/en/download/), and then download and run the Windows Installer. Make sure you do not deselect any of the Node components such as NPM during the installation.
 
-### Verify the Node installation
+#### Verify the Node installation
 Now let's verify that it is installed. Enter the following into your terminal:
 
 `node -e 'console.log("works")'`
@@ -47,7 +56,7 @@ You should get a response that says "works". If not, try reinstalling Node again
 
 ----
 
-## Install eslint and live-server Node packages
+### Install eslint and live-server Node packages
 
 Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your Terminal (Git Bash on Windows) and enter:
 
@@ -74,7 +83,7 @@ Linting is the process of running a program that will analyze code for potential
 
 That means the linter is your friend! It will help you write syntactically correct code, so you can catch errors in your text editor, rather than having to hop over the browser, refresh your page, and search for errors. Faster feedback makes for happier developers (that's you!).
 
-## Install linter and linter-eslint Atom packages
+### Install linter and linter-eslint Atom packages
 
 For this next part, you will have Atom's package manager **apm** install some packages. Go [here](https://atom.io/docs/v0.194.0/using-atom-atom-packages#command-line) to verify it's enabled. Once you have verified that apm commands will work, enter this on your Terminal:
 
@@ -92,9 +101,25 @@ Linter and linter-eslint should be on that list, like in this screen shot:
 
  ![screen shot 2016-05-28 at 11 33 31 pm](https://cloud.githubusercontent.com/assets/12869788/15631728/a816191c-252c-11e6-8cb4-5c757f240a50.png)
 
- ----
+#### Make Sure Homebrew Is Up To Date
 
-## Install PostgreSQL Database Software
+If... everything goes smoothly...
+
+It's good to regularly check that your installation of Homebrew is current. On your command line, from any directory, enter the command
+
+`brew update`
+
+This is also a good time to make sure that your apps installed with Homebrew are up to date. Do this with the command
+
+`brew upgrade`
+
+Lastly, to verify that your system is current, run
+
+`brew doctor`.
+
+If things do not go smoothly, list the errors you received in your Canvas submission.
+
+### Install PostgreSQL Database Software
 *Please note that if you have a previously installed version of PostgreSQL on any operating system, you should be aware of any username and password that you've set for that installation. If you're unsure please uninstall and reinstall a fresh copy, which will also install the latest stable version. Additionally, if you are using a version before 9.5, you should uninstall and reinstall. You will be unable to complete certain labs if you are using version 9.4 or previous!*
 
 
@@ -179,7 +204,7 @@ Now, whenever you first start up your computer, you just have to run `pgstart` t
 
 If, for some reason, the `pgstart` command is not available when you open a new window, you should be able to run `source .bashrc` or `source .bash_profile` (wherever you put the alias), then `pgstart` should be available.
 
-## ALL USERS: Startup and Create some databases
+### ALL USERS: Startup and Create some databases
 
 1. Login to psql.
   - For Mac, run your new `pgstart` alias, then type `psql`.
@@ -192,4 +217,18 @@ If, for some reason, the `pgstart` command is not available when you open a new 
 4. Now enter: `CREATE DATABASE portfolio;`. This should mirror the above step.
 5. Verify that your databases were created by running `\l` (no semicolon). You should see a list of databases, including `kilovolt` and `portfolio`. You should be able to connect to a database by running `\c DATABASE_NAME`, e.g. `\c kilovolt` or `\c portfolio`.
 
-Congrats! You're all done. Well, except for your class-specific directory instructions :wink:
+## Connect With Your Classmates (Canvas assignment)
+
+You will be able to complete this assignment once the course Slack channel has been created, which typically happens 7-14 days before the first day of class. See the assignment in Canvas for more details.
+
+## Codecademy: jQuery (Canvas assignment)
+
+Complete all of the free portions of the Codecademy course in jQuery. The Canvas submission is a screenshot indicating that the course is complete.
+
+## Bonus: Prework Extra Credit JavaScript Practice (Canvas assignment)
+
+Details for completing this assignment can be found in Canvas after the course has been published.
+
+---
+
+Congrats! You're all done. :wink:
