@@ -101,7 +101,7 @@ Linter and linter-eslint should be on that list, like in this screen shot:
 
  ![screen shot 2016-05-28 at 11 33 31 pm](https://cloud.githubusercontent.com/assets/12869788/15631728/a816191c-252c-11e6-8cb4-5c757f240a50.png)
 
-#### Make Sure Homebrew Is Up To Date
+#### (MacOS only) Make Sure Homebrew Is Up To Date
 
 If... everything goes smoothly...
 
