@@ -18,12 +18,16 @@ If you haven't already, install [Atom](https://atom.io). If you have used an adv
 
 [Atom's documentation](https://atom.io/docs/latest) is top-notch. Review it now to familiarize yourself with the basics. Make sure you're looking at the docs for the latest version. If you find that you are unable to call atom in the terminal, you may need to enable shell commands through Atom by first opening it through your graphical desktop interface, and selecting `Install Shell Commands` in the drop-down menu.
 
+### [PROPOSAL] - Include optional VS Code instructions 
+### Install VS Code 
+Optionally download and install [Visual Studio Code](https://code.visualstudio.com/download) a free, open source, cross platform IDE with great integration with developer tools.
+
 
 ### Install Node
 
-*Note*: If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`.
-
 #### Linux instructions
+
+*Note*: If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`.
 
   To install Node, open your Terminal and copy and paste the following line, then hit Enter:
 
@@ -36,8 +40,7 @@ If you haven't already, install [Atom](https://atom.io). If you have used an adv
   If you run into issues trying to install Node from these steps, please contact your instructor.
 
 #### Mac instructions
-
-  If you took Code 201, you should already have Homebrew installed. If you have not, follow the guide on [this page](https://github.com/codefellows/code-201-prework/blob/master/prework/mac/2_homebrew.md#install-homebrew).
+  Install [Homebrew](https://github.com/codefellows/code-201-prework/blob/master/prework/mac/2_homebrew.md#install-homebrew) which will make the rest of the installation process much easier.
 
   To install Node, open your Terminal, and enter:
 
