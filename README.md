@@ -2,6 +2,8 @@
 
 To get your laptop and yourself ready for the start of Code 301, there are a series of pre-work tasks to complete. Before completing the tasks in this document, ensure that you have completed all of the installation tasks in the [Code 201 Prework](https://github.com/codefellows/code-201-prework).
 
+In particular, if you have tested in to Code 301 and did not take Code 201, be especially attentive to the Git and GitHub portion of the Code 201 prework. Note that your future classmates who took 201 will already have a month of practice using Git and GitHub; it is a common area of challenge in 301 for students who tested in to the course.
+
  Note that these tasks have a corresponding assignment to submit in your Canvas course, but be aware that at the time you receive the link to this pre-work that the Canvas course may not yet be published, depending upon the timing of Admissions processes and when class begins. Typically, Canvas courses are published 5-7 days before class begins.
 
 ## Customize Canvas (Canvas assignment)
@@ -12,16 +14,16 @@ You will not be able to complete this assignment until the Canvas course is publ
 
 Completion of the following setup tasks are all to be submitted in a single Canvas assignment. Keep a log of any errors or difficulties you encounter, and include those with your submission.
 
-### Install Atom
+### Install VSCode
 
-If you haven't already, install [Atom](https://atom.io). If you have used an advanced text editor like Sublime Text, then Atom will feel familiar to you. Atom is free, open-source, cross-platform, and has a wide array of useful plug-ins available. Please use Atom during Code 301. (If you are proficient with another text editor that you *love*, you may use that instead, but please note that your instructional team may not be able to assist with debugging any issues with your editor)
+If you haven't already, install [VSCode](https://code.visualstudio.com/Download). If you have used an advanced text editor like Sublime Text or Atom, VSCode will feel familiar to you. VSCode is free, open-source, cross-platform, and has a wide array of useful plug-ins available. Please use VSCode during Code 301. (If you are proficient with another text editor that you *love*, you may use that instead, but please note that your instructional team may not be able to assist with debugging any issues with your editor)
 
-[Atom's documentation](https://atom.io/docs/latest) is top-notch. Review it now to familiarize yourself with the basics. Make sure you're looking at the docs for the latest version. If you find that you are unable to call atom in the terminal, you may need to enable shell commands through Atom by first opening it through your graphical desktop interface, and selecting `Install Shell Commands` in the drop-down menu.
+[VSCode's documentation](https://code.visualstudio.com/docs) is top-notch. Review it now to familiarize yourself with the basics. Make sure you're looking at the docs for the latest version. If you find that you are unable to call `code` in the terminal, you may need to enable shell commands. Instructions are in the documentation.
 
 
 ### Install Node
 
-*Note*: If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`.
+*Note*: If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`. Note: the `sudo` command is a dangerous and powerful command, and generally should not be used unless you understand why you need to use it in a given situation. In this case, however, the `sudo` commands have been carefully reviewed.
 
 #### Linux instructions
 
