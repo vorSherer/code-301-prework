@@ -1,6 +1,6 @@
 # Code 301 Pre-work: Intermediate Software Development
 
-To get your laptop and yourself ready for the start of Code 301, there are a series of pre-work tasks to complete. They are all listed in this document.
+To get your laptop and yourself ready for the start of Code 301, there are a series of pre-work tasks to complete. Before completing the tasks in this document, ensure that you have completed all of the installation tasks in the [Code 201 Prework](https://github.com/codefellows/code-201-prework).
 
  Note that these tasks have a corresponding assignment to submit in your Canvas course, but be aware that at the time you receive the link to this pre-work that the Canvas course may not yet be published, depending upon the timing of Admissions processes and when class begins. Typically, Canvas courses are published 5-7 days before class begins.
 
