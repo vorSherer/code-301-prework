@@ -85,6 +85,10 @@ Linting is the process of running a program that will analyze code for potential
 
 That means the linter is your friend! It will help you write syntactically correct code, so you can catch errors in your text editor, rather than having to hop over the browser, refresh your page, and search for errors. Faster feedback makes for happier developers (that's you!).
 
+### Integrate ESLint with VS Code
+Install the ESLint extension for VS Code [here](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+VS Code will now display errors and warnings in your scripts.
+
 #### (MacOS only) Make Sure Homebrew Is Up To Date
 
 If... everything goes smoothly...
