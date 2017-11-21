@@ -85,23 +85,9 @@ Linting is the process of running a program that will analyze code for potential
 
 That means the linter is your friend! It will help you write syntactically correct code, so you can catch errors in your text editor, rather than having to hop over the browser, refresh your page, and search for errors. Faster feedback makes for happier developers (that's you!).
 
-### Install linter and linter-eslint Atom packages
-
-For this next part, you will have Atom's package manager **apm** install some packages. Go [here](https://atom.io/docs/v0.194.0/using-atom-atom-packages#command-line) to verify it's enabled. Once you have verified that apm commands will work, enter this on your Terminal:
-
-`apm install linter linter-eslint`
-
-You should get two success messages while it installs the linter and linter-eslint packages.
-
-### Verify the Atom packages installation
-
-Enter the following into your Terminal:
-
-`apm ls`  
-You should get back a long list, and at the end you should receive a list of packages you installed for Atom.   
-Linter and linter-eslint should be on that list, like in this screen shot:
-
- ![screen shot 2016-05-28 at 11 33 31 pm](https://cloud.githubusercontent.com/assets/12869788/15631728/a816191c-252c-11e6-8cb4-5c757f240a50.png)
+### Integrate ESLint with VS Code
+Install the ESLint extension for VS Code [here](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+VS Code will now display errors and warnings in your scripts.
 
 #### (MacOS only) Make Sure Homebrew Is Up To Date
 
