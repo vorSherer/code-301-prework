@@ -209,9 +209,43 @@ If, for some reason, the `pgstart` command is not available when you open a new 
 
 You will be able to complete this assignment once the course Slack channel has been created, which typically happens 7-14 days before the first day of class. See the assignment in Canvas for more details.
 
-## Codecademy: jQuery (Canvas assignment)
+## Code Assignments
+
+### jQuery
 
 Complete all of the [Codecademy course in jQuery](https://www.codecademy.com/en/tracks/jquery). The Canvas submission is a screenshot indicating that the course is complete.
+
+### CSS: Chocolate Pizza
+
+  Students in Code 201 complete a time-boxed design comp assignment called "Chocolate Pizza". This is a revisiting of that assignment:
+
+  - Rather than the "complete as much of the assignment as you can in the available time" approach in Code 201, the goal here is to get the HTML/CSS mockup to be pixel-perfect.
+  - Create and use a 960-pixel CSS grid system to manage display of the content. Look at [this article](http://j4n.co/blog/Creating-your-own-css-grid-system) as a reference.
+  - Your column of content should be centered in the window, as in the preview image.
+  - Your solution does not need to be responsive in any way.
+  - Do not use any negative margins.
+
+**Instructions:**
+
+1. Create and clone a new GitHub repository to house the code for this project.
+2. Immediately check out a new branch in which to do your work.
+3. Save the contents of the adjacent `assets` directory into an `assets` directory in your project.
+3. Write your code in two files: `index.html` and `style.css`. You do not need to include JavaScript.
+3. Use the included `PREVIEW.png` image as a reference; your goal is to match it as closely as possible.
+4. Making regular Git commits with appropriately descriptive commit messages while you are working.
+5. When finished, be sure to push your final code to GitHub and merge your branch into  `master`.
+6. Deploy your page using a `gh-pages` branch or via the options in the repository "Settings" tab.
+7. Submit the links to your repoitory AND your deployment in the corresponding Canvas assignment.
+
+Note: as in Code 201, you may not use CSS3 Flexible Box (a.k.a. "flexbox").
+
+### Code Wars
+
+Throughout Code 301 you will be completing a series of assignments at [Code Wars](https://www.codewars.com).
+
+1. If you do not already have one, sign up for a user account at Code Wars.
+2. Complete [this kata](https://www.codewars.com/kata/array-element-parity/javascript).
+3. In the corresponding Canvas assignment, submit a link to your Code Wars profile page and copy/paste your solution code into the text box.
 
 ---
 
