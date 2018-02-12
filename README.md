@@ -1,123 +1,61 @@
 # Code 301 Pre-work: Intermediate Software Development
 
-To get your laptop and yourself ready for the start of Code 301, there are a series of pre-work tasks to complete. Before completing the tasks in this document, ensure that you have completed all of the installation tasks in the [Code 201 Prework](https://github.com/codefellows/code-201-prework).
+To get your laptop and yourself ready for the start of Code 301, there are a series of pre-work tasks to complete. 
 
-In particular, if you have tested in to Code 301 and did not take Code 201, be especially attentive to the Git and GitHub portion of the Code 201 prework. Note that your future classmates who took 201 will already have a month of practice using Git and GitHub; it is a common area of challenge in 301 for students who tested in to the course.
+Before completing the tasks in this document, ensure that you have completed all of the installation tasks in the [Code 201 Prework](https://github.com/codefellows/code-201-prework).
 
- Note that these tasks have a corresponding assignment to submit in your Canvas course, but be aware that at the time you receive the link to this pre-work that the Canvas course may not yet be published, depending upon the timing of Admissions processes and when class begins. Typically, Canvas courses are published 5-7 days before class begins.
+In particular, if you have tested in to Code 301 and did not take Code 201, be especially attentive to the git and GitHub portion of the Code 201 prework. Note that your future classmates who took 201 will already have a month of practice using git and GitHub; it is a common area of challenge in 301 for students who tested in to the course. 
 
-## Customize Canvas (Canvas assignment)
+Note that the tasks below have a corresponding assignment to submit in your Canvas course, but be aware that at the time you receive the link to this pre-work that the Canvas course may not yet be published, depending upon the timing of Admissions processes and when class begins. Typically, Canvas courses are published 5-7 days before class begins.
 
-You will not be able to complete this assignment until the Canvas course is published; the details for fulfilling this assignment are located there.
+## Code Assignments
+
+### jQuery
+
+Complete all of the [Codecademy course in jQuery](https://www.codecademy.com/en/tracks/jquery). The Canvas submission is a screenshot indicating that the course is complete.
+
+### Code Wars
+
+Throughout Code 301 you will be completing a series of assignments at [Code Wars](https://www.codewars.com).
+
+1. If you do not already have one, sign up for a user account at Code Wars.
+2. Complete [this kata](https://www.codewars.com/kata/array-element-parity/javascript).
+3. In the corresponding Canvas assignment, submit a link to your Code Wars profile page and copy/paste your solution code into the text box.
+
+### Chocolate Pizza CSS
+
+This assignment is optional, **if** you are coming from a Code 201 class that ended within 2 weeks of the start of your Code 301 class. 
+
+Students in Code 201 complete a time-boxed design comp assignment, called "Chocolate Pizza". This is a revisiting of that assignment:
+
+  - Rather than the "complete as much of the assignment as you can in the available time" approach in Code 201, the goal here is to get the HTML/CSS mockup to be pixel-perfect.
+  - Create and use a 960-pixel CSS grid system to manage display of the content. Look at [this article](http://j4n.co/blog/Creating-your-own-css-grid-system) as a reference.
+  - Your column of content should be centered in the window, as in the preview image.
+  - Your solution does not need to be responsive in any way.
+  - Do not use any negative margins, or Flexbox positioning
+
+**Instructions:**
+
+1. Create and clone a new GitHub repository to house the code for this project.
+2. Immediately check out a new branch in which to do your work.
+3. Save the contents of the [`assets` directory](https://github.com/codefellows/code-301-prework/tree/master/assets){:target="_blank"} into an `assets` directory in your project.
+3. Write your code in two files: `index.html` and `style.css`. You do not need to include JavaScript.
+3. Use the included `PREVIEW.png` image as a reference; your goal is to match it as closely as possible.
+4. Making regular Git commits with appropriately descriptive commit messages while you are working.
+5. When finished, be sure to push your final code to GitHub and merge your branch into  `master`.
+6. Deploy your page using a `gh-pages` branch or via the options in the repository "Settings" tab.
+7. Submit the links to your repoitory AND your deployment in the corresponding Canvas assignment.
 
 ## Setup of Your Laptop Dev Environment (Canvas assignment)
 
 Completion of the following setup tasks are all to be submitted in a single Canvas assignment. Keep a log of any errors or difficulties you encounter, and include those with your submission.
 
-### Install VSCode
-
-If you haven't already, install [VSCode](https://code.visualstudio.com/Download). If you have used an advanced text editor like Sublime Text or Atom, VSCode will feel familiar to you. VSCode is free, open-source, cross-platform, and has a wide array of useful plug-ins available. Please use VSCode during Code 301. (If you are proficient with another text editor that you *love*, you may use that instead, but please note that your instructional team may not be able to assist with debugging any issues with your editor)
-
-[VSCode's documentation](https://code.visualstudio.com/docs) is top-notch. Review it now to familiarize yourself with the basics. Make sure you're looking at the docs for the latest version. If you find that you are unable to call `code` in the terminal, you may need to enable shell commands. Instructions are in the documentation.
-
-
-### Install Node
-
-*Note*: If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`. Note: the `sudo` command is a dangerous and powerful command, and generally should not be used unless you understand why you need to use it in a given situation. In this case, however, the `sudo` commands have been carefully reviewed.
-
-#### Linux instructions
-
-  To install Node, open your Terminal and copy and paste the following line, then hit Enter:
-
-  `sudo apt-get install nodejs`
-
-  Afterwards, you'll want to install Node Package Manager (NPM).
-
-  `sudo apt-get install npm`
-
-  If you run into issues trying to install Node from these steps, please contact your instructor.
-
-#### Mac instructions
-
-  If you took Code 201, you should already have Homebrew installed. If you have not, follow the guide on [this page](https://github.com/codefellows/code-201-prework/blob/master/prework/mac/2_homebrew.md#install-homebrew).
-
-  To install Node, open your Terminal, and enter:
-
-  `brew update && brew install node`
-
-#### Windows instructions
-
-  To install Node, go [here](https://nodejs.org/en/download/), and then download and run the Windows Installer. Make sure you do not deselect any of the Node components such as NPM during the installation.
-
-#### Verify the Node installation
-Now let's verify that it is installed. Enter the following into your terminal:
-
-`node -e 'console.log("works")'`
-
-You should get a response that says "works". If not, try reinstalling Node again. If you are still having issues, please contact your instructor.
-
-----
-
-### Install eslint and live-server Node packages
-
-Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your Terminal (Git Bash on Windows) and enter:
-
-`npm -g i eslint live-server git-open`
-
-You should see a lot of feedback as it installs.
-
-### Verify the Node packages installation
-Now let's verify that it is installed. Enter the following into your terminal:
-
-`npm list -g --depth=0`
-
-You should get a list back that includes `live-server` and `eslint`.
-
-![](http://i.imgur.com/1ITioP1.png)
-
-----
-
-### What is this linter thing?
-
-Linting is the process of running a program that will analyze code for potential errors. It is an important part of the quality assurance process.
-
-> `lint` was the name originally given to a particular program that flagged some suspicious and non-portable constructs (likely to be bugs) in C language source code. The term is now applied generically to tools that flag suspicious usage in software written in any computer language.
-
-That means the linter is your friend! It will help you write syntactically correct code, so you can catch errors in your text editor, rather than having to hop over the browser, refresh your page, and search for errors. Faster feedback makes for happier developers (that's you!).
-
-### Integrate ESLint with VS Code
-Install the ESLint extension for VS Code [here](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
-VS Code will now display errors and warnings in your scripts.
-
-#### (MacOS only) Make Sure Homebrew Is Up To Date
-
-If... everything goes smoothly...
-
-It's good to regularly check that your installation of Homebrew is current. On your command line, from any directory, enter the command
-
-`brew update`
-
-This is also a good time to make sure that your apps installed with Homebrew are up to date. Do this with the command
-
-`brew upgrade`
-
-Lastly, to verify that your system is current, run
-
-`brew doctor`.
-
-If things do not go smoothly, list the errors you received in your Canvas submission.
-
 ### Install PostgreSQL Database Software
 *Please note that if you have a previously installed version of PostgreSQL on any operating system, you should be aware of any username and password that you've set for that installation. If you're unsure please uninstall and reinstall a fresh copy, which will also install the latest stable version. Additionally, if you are using a version before 9.5, you should uninstall and reinstall. You will be unable to complete certain labs if you are using version 9.4 or previous!*
 
-
 For both Windows and Linux users, please follow the default installation instructions taking care not to change values such as the default port numbers (You may be prompted to change them, but should also be given default values).
 
-
-
-
-
-### Windows
+#### Windows
 
 *For reference, these instructions are taken from the following documentation: http://www.postgresqltutorial.com/install-postgresql/*
 
@@ -199,7 +137,7 @@ When you installed PostgreSQL, the installer also installed some extra tools. On
 
 
 
-### Linux
+#### Linux
 
 *For reference, these instructions are taken from the following documentation: https://www.postgresql.org/download/*
 
@@ -217,7 +155,7 @@ When you installed PostgreSQL, the installer also installed some extra tools. On
 
 **If you are having issues with installation, please contact your instructor.**
 
-### MacOS
+#### MacOS
 
 You should have already verified during the Node installation that you have Homebrew installed. Please see that section above for more details if not.
 
@@ -242,7 +180,7 @@ Now, whenever you first start up your computer, you just have to run `pgstart` t
 
 If, for some reason, the `pgstart` command is not available when you open a new window, you should be able to run `source .bashrc` or `source .bash_profile` (wherever you put the alias), then `pgstart` should be available.
 
-### ALL USERS: Startup and Create some databases
+#### ALL USERS: Startup and Create some databases
 
 1. Login to psql.
   - For Mac, run your new `pgstart` alias, then type `psql`.
@@ -253,48 +191,6 @@ If, for some reason, the `pgstart` command is not available when you open a new 
 3. Enter the following command: `CREATE DATABASE kilovolt;`. *Note the semicolon. If you forget it, your prompt will go to a new line and look like* `postgres-#`. *This means you have an unterminated command and the prompt will just keep going to new lines until you enter a semicolon*.
   - You should receive the feedback "CREATE DATABASE".
 4. Verify that your databases were created by running `\l` (no semicolon). You should see a list of databases, including `kilovolt`. You should be able to connect to a database by running `\c DATABASE_NAME`, e.g. `\c kilovolt`.
-
-## Connect With Your Classmates (Canvas assignment)
-
-You will be able to complete this assignment once the course Slack channel has been created, which typically happens 7-14 days before the first day of class. See the assignment in Canvas for more details.
-
-## Code Assignments
-
-### jQuery
-
-Complete all of the [Codecademy course in jQuery](https://www.codecademy.com/en/tracks/jquery). The Canvas submission is a screenshot indicating that the course is complete.
-
-### CSS: Chocolate Pizza
-
-  Students in Code 201 complete a time-boxed design comp assignment called "Chocolate Pizza". This is a revisiting of that assignment:
-
-  - Rather than the "complete as much of the assignment as you can in the available time" approach in Code 201, the goal here is to get the HTML/CSS mockup to be pixel-perfect.
-  - Create and use a 960-pixel CSS grid system to manage display of the content. Look at [this article](http://j4n.co/blog/Creating-your-own-css-grid-system) as a reference.
-  - Your column of content should be centered in the window, as in the preview image.
-  - Your solution does not need to be responsive in any way.
-  - Do not use any negative margins.
-
-**Instructions:**
-
-1. Create and clone a new GitHub repository to house the code for this project.
-2. Immediately check out a new branch in which to do your work.
-3. Save the contents of the adjacent `assets` directory into an `assets` directory in your project.
-3. Write your code in two files: `index.html` and `style.css`. You do not need to include JavaScript.
-3. Use the included `PREVIEW.png` image as a reference; your goal is to match it as closely as possible.
-4. Making regular Git commits with appropriately descriptive commit messages while you are working.
-5. When finished, be sure to push your final code to GitHub and merge your branch into  `master`.
-6. Deploy your page using a `gh-pages` branch or via the options in the repository "Settings" tab.
-7. Submit the links to your repoitory AND your deployment in the corresponding Canvas assignment.
-
-Note: as in Code 201, you may not use CSS3 Flexible Box (a.k.a. "flexbox").
-
-### Code Wars
-
-Throughout Code 301 you will be completing a series of assignments at [Code Wars](https://www.codewars.com).
-
-1. If you do not already have one, sign up for a user account at Code Wars.
-2. Complete [this kata](https://www.codewars.com/kata/array-element-parity/javascript).
-3. In the corresponding Canvas assignment, submit a link to your Code Wars profile page and copy/paste your solution code into the text box.
 
 ---
 
