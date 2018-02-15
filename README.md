@@ -157,28 +157,20 @@ When you installed PostgreSQL, the installer also installed some extra tools. On
 
 #### MacOS
 
-You should have already verified during the Node installation that you have Homebrew installed. Please see that section above for more details if not.
+You should have already verified that you have Homebrew installed, from the Code 201 Prework. Use Homebrew to install PostgreSQL. 
 
 To install PostgreSQL, open your Terminal, and enter:
 `brew update && brew install postgresql`
 
 This will create a user for you, that matches your logged in user account. Run the `whoami` command in the terminal if you aren't sure what that is. This user has a blank password set as the default.
 
-*You will need to run this command whenever you first start your computer and open up the terminal in order to start your Postgres server:*
+*You will need to run this command whenever you first start or restart your computer and open up the terminal in order to start your Postgres server:*
 
-`pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start`
+`brew services start postgresql`
 
-Since that's rather verbose, we can set it as an alias!
+If you'd like to shut down your database server, you can run:
 
-`alias pgstart='pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start'`
-
-However, aliases are temporary. You would need to set that alias each time you opened up a new terminal window. Instead, we can tell our system to always set that alias whenever a terminal is opened. Find your **.bashrc** or **.bash_profile** file - it will probably be in your home (~) directory. Run `code .bashrc` or `code .bash_profile` to open it up, then on a new line, paste this in:
-
-`alias pgstart='pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start'`
-
-Now, whenever you first start up your computer, you just have to run `pgstart` to get your Postgres server running.
-
-If, for some reason, the `pgstart` command is not available when you open a new window, you should be able to run `source .bashrc` or `source .bash_profile` (wherever you put the alias), then `pgstart` should be available.
+`brew services stop postgresql`
 
 #### ALL USERS: Startup and Create some databases
 
