@@ -175,7 +175,7 @@ If you'd like to shut down your database server, you can run:
 #### ALL USERS: Startup and Create some databases
 
 1. Login to psql.
-  - For Mac, run your new `pgstart` alias, then type `psql`.
+  - For Mac, type `psql` from terminal.
     - If the response is, "Can't find database *yourUserName*", run `createdb -U yourUserName`, then run `psql` again.
   - For Windows, open up your psql program (SQL Shell)
   - For Linux, run `sudo -u postgres psql`
