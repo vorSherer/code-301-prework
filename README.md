@@ -21,7 +21,7 @@ If you would like extra practice on jQuery, [Khan Academy also has a course](htt
 Throughout Code 301 you will be completing a series of assignments at [Code Wars](https://www.codewars.com).
 
 1. If you do not already have one, sign up for a user account at Code Wars.
-2. Complete [this kata](https://www.codewars.com/kata/array-element-parity/javascript).
+2. Complete [this kata](https://www.codewars.com/kata/check-the-exam).
 3. In the corresponding Canvas assignment, submit a link to your Code Wars profile page and copy/paste your solution code into the text box.
 
 ### Chocolate Pizza CSS
