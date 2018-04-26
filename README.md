@@ -26,7 +26,7 @@ Throughout Code 301 you will be completing a series of assignments at [Code Wars
 
 ### Chocolate Pizza CSS
 
-This assignment is optional, **if** you are coming from a Code 201 class that ended within 2 weeks of the start of your Code 301 class. 
+**If you are coming from a Code 201 class that ended within 2 weeks of the start of your Code 301 class**, this assignment is optional. 
 
 Students in Code 201 complete a time-boxed design comp assignment, called "Chocolate Pizza". This is a revisiting of that assignment:
 
@@ -34,7 +34,7 @@ Students in Code 201 complete a time-boxed design comp assignment, called "Choco
   - Create and use a 960-pixel CSS grid system to manage display of the content. Look at [this article](http://j4n.co/blog/Creating-your-own-css-grid-system) as a reference.
   - Your column of content should be centered in the window, as in the preview image.
   - Your solution does not need to be responsive in any way.
-  - Do not use any negative margins, or Flexbox positioning
+  - Do not use any negative margins, or flex positioning.
 
 **Instructions:**
 
@@ -44,8 +44,8 @@ Students in Code 201 complete a time-boxed design comp assignment, called "Choco
 3. Write your code in two files: `index.html` and `style.css`. You do not need to include JavaScript.
 3. Use the included `PREVIEW.png` image as a reference; your goal is to match it as closely as possible.
 4. Making regular Git commits with appropriately descriptive commit messages while you are working.
-5. When finished, be sure to push your final code to GitHub and merge your branch into  `master`.
-6. Deploy your page using a `gh-pages` branch or via the options in the repository "Settings" tab.
+5. When finished, be sure to push your final code to GitHub and merge your branch into `master`.
+6. Deploy your page on GitHub Pages via the options in the repository "Settings" tab.
 7. Submit the links to your repoitory AND your deployment in the corresponding Canvas assignment.
 
 ## Setup of Your Laptop Dev Environment (Canvas assignment)
@@ -57,7 +57,7 @@ Completion of the following setup tasks are all to be submitted in a single Canv
 
 For both Windows and Linux users, please follow the default installation instructions taking care not to change values such as the default port numbers (You may be prompted to change them, but should also be given default values).
 
-#### Windows
+### Windows with Git Bash
 
 *For reference, these instructions are taken from the following documentation: http://www.postgresqltutorial.com/install-postgresql/*
 
@@ -93,8 +93,8 @@ At the time of writing, PostgreSQL does not get added to your path by default, s
 
 Normally when programs are installed ( like VScode for Windows) they are automatically added to your PATH which means you can type a quick command to execute the program ( like `code` for VScode for example). Here is how you add the psql command to your PATH which will allow you to launch PostgreSQL in Git Bash.
 
-- Copy this line, `C:\Program Files\PostgreSQL\<version>\bin` and put the version number of PostgeSQL inside of  <version>. IE `C:\Program Files\PostgreSQL\10\bin`.
-- Open your system settings. ( On windows 10 you can right click on the start menu and navigate to settings ).
+- Copy this line, `C:\Program Files\PostgreSQL\<version>\bin` and put the version number of PostgeSQL inside of \<version\>. IE `C:\Program Files\PostgreSQL\10\bin`.
+- Open your system settings. (On Windows 10, you can right click on the start menu and navigate to settings.)
 
 - You should see a search bar. Type `env` and the search will populate with a couple options. Choose the option that says "Edit the System Enviroment Settings".
 ![](https://i.imgur.com/ZT7xvD9.png)
@@ -118,7 +118,7 @@ Normally when programs are installed ( like VScode for Windows) they are automat
 - If it did work and you were prompted to enter a password then psql has been successfully added to your PATH.  
 - In the password field, enter the password that you gave when you installed PostgreSQL.
 - If it works, then your terminal window will change to the PostgreSQL interface.
-- In this window, you can enter SQL statements, which must end with semicolons. Congratulations,you've installed PostgreSQL correctly!
+- In this window, you can enter SQL statements, which must end with semicolons. Congratulations,you've installed PostgreSQL correctly! Continue to [creating a database](#create-database).
 
 - Note: If you used a different username then you can specify that after the `-U` in `psql -U <username>`. In most cases, by default the username is postgres, but it may have been changed to the username that you're currently logged into your computer account with. 
 
@@ -133,13 +133,28 @@ When you installed PostgreSQL, the installer also installed some extra tools. On
 - Open the SQL shell program.
 - When it prompts you for input, just hit enter to select default values until it asks for a password. You will put in the password you entered during installation.
 - You should have a window that [looks like this](http://www.postgresqltutorial.com/wp-content/uploads/2012/08/psql.png).
-- In this window, you can enter SQL statements, which must all end with semicolons. Congratulations, you've installed correctly!
+- In this window, you can enter SQL statements, which must all end with semicolons. Congratulations, you've installed correctly! Continue to [creating a database](#create-database).
 
 **If you are having issues with the installation, please contact your instructor.**
 
 
+### Windows with the Windows Subsystem for Linux
 
-#### Linux
+The best setup to give you the best of both worlds (data accessible from both Linux and Windows) is to install Postgres on Windows, and use a slightly-modified command from your Linux terminal to access the database.
+
+- Go to the PostgreSQL [official website](http://www.postgresql.org/download/windows/).
+- Click on the [download installer from EnterpriseDB](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#windows). Choose the latest version to download. It takes a few minutes to complete the download.
+- Open the installer and follow the installation instructions. Make sure to leave ports (i.e. 5432) at their default setting, and remember the password you type in for the postgres user. (You do not need to reinstall Git, but you should install the other optional tools.)
+
+Once this installation finishes, you should have a program installed on Windows called "SQL Shell (postgres)", which will open a dedicated terminal connected to Postgres. However, you'll also want to be able to access the `psql` command from your Linux terminal.
+
+- Open your terminal and type `which psql`. If you get back a line like `/usr/bin/psql`, you should be all set! If not, run `sudo apt-get install postgresql-client-common` to install that command.
+- Your standard line to connect to your database will be `psql -U postgres -h localhost`. You'll be prompted for your password, which is the postgres password you set during the Windows installation.
+- If this connection is successful, you'll be in the PostgresQL interface, with a line that looks like `postgres=#` as the prompt. Hooray! Continue to [creating a database](#create-database).
+- If you get an error message asking you to install `postgres-client-<version>`, never fear! Run `sudo apt-get install postgres-client-9.5`, then try the `psql` line again. (You may get a warning that you're using different versions of postgres on Linux and Windows; that won't be an issue.)
+
+
+### Linux
 
 *For reference, these instructions are taken from the following documentation: https://www.postgresql.org/download/*
 
@@ -153,11 +168,11 @@ When you installed PostgreSQL, the installer also installed some extra tools. On
 - You should be able to run the command `sudo -u postgres psql`. You will be asked for your administrator password - this is what you usually enter when you run `sudo` commands. This will log you into the psql prompt as the user postgres.
 - You should now have a prompt that looks like `postgres=#`. You can run SQL commands from here, which must end in semicolons.
 - If you were not prompted for a default user or password, we will set one using psql. If you type `\du`, you can get a list of users associated with PostgreSQL. You should see a single user, `postgres`. In order to give this user a password, enter the following command: `ALTER ROLE postgres PASSWORD 'your-password-here';`, replacing "your-password-here" with whatever you want it to be. Remember that your password must be wrapped in quotes. *Don't forget the semicolon*.
-- If successful, you will receive the feedback `ALTER ROLE`.
+- If successful, you will receive the feedback `ALTER ROLE`. Hooray! Continue to [creating a database](#create-database).
 
 **If you are having issues with installation, please contact your instructor.**
 
-#### MacOS
+### MacOS
 
 You should have already verified that you have Homebrew installed, from the Code 201 Prework. Use Homebrew to install PostgreSQL. 
 
@@ -174,14 +189,17 @@ If you'd like to shut down your database server, you can run:
 
 `brew services stop postgresql`
 
+<a id="create-database"></a>
+
 #### ALL USERS: Startup and Create some databases
 
 1. Login to psql.
   - For Mac, type `psql` from terminal.
     - If the response is, "Can't find database *yourUserName*", run `createdb -U yourUserName`, then run `psql` again.
-  - For Windows, open up your psql program (SQL Shell)
-  - For Linux, run `sudo -u postgres psql`
-2. You should be at a prompt that looks like `postgres=#`
+  - For Windows, open up your psql program (SQL Shell).
+  - For Linux, run `sudo -u postgres psql`.
+  - For Windows Subsystem for Linux, run `psql -U postgres -h localhost` and enter your password when prompted.
+2. You should be at a prompt that looks like `postgres=#`.
 3. Enter the following command: `CREATE DATABASE kilovolt;`. *Note the semicolon. If you forget it, your prompt will go to a new line and look like* `postgres-#`. *This means you have an unterminated command and the prompt will just keep going to new lines until you enter a semicolon*.
   - You should receive the feedback "CREATE DATABASE".
 4. Verify that your databases were created by running `\l` (no semicolon). You should see a list of databases, including `kilovolt`. You should be able to connect to a database by running `\c DATABASE_NAME`, e.g. `\c kilovolt`.
