@@ -58,6 +58,14 @@ Students in Code 201 complete a time-boxed design comp assignment, called "Choco
 
 Completion of the following setup tasks are all to be submitted in a single Canvas assignment. Keep a log of any errors or difficulties you encounter, and include those with your submission.
 
+### Install Heroku CLI
+
+Follow [these directions](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction) for installing the Heroku CLI. *Note: you only need to complete the "Introduction" and "Set Up" sections.*
+
+**Verify Installation**
+
+From the command line, type `heroku --version` to verify that your Heroku installation was successful. You will also need to verify that your PostgreSQL installation (below) was successful, so please wait until the end of the prework steps to verify one after the other and submit a single screenshot in the corresponding Canvas assignment.
+
 ### Install PostgreSQL Database Software
 *Please note that if you have a previously installed version of PostgreSQL on any operating system, you should be aware of any username and password that you've set for that installation. If you're unsure please uninstall and reinstall a fresh copy, which will also install the latest stable version. Additionally, if you are using a version before 9.5, you should uninstall and reinstall. You will be unable to complete certain labs if you are using version 9.4 or previous!*
 
