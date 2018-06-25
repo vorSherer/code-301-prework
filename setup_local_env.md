@@ -39,8 +39,9 @@ For both Windows and Linux users, please follow the default installation instruc
 - If successful, you will receive the feedback `CREATE ROLE`.
 - Now we need to grant that user administrative control. In your SQL shell, type the following: `ALTER ROLE your-username-here WITH superuser;`, replacing "your-username-here" with the username you created a role for in the previous step.
 - If successful, you will receive the feedback `ALTER ROLE`.
-- In another terminal window, outside of the SQL shell, type the following: `createdb your-username-here`, replacing "your-username-here" with the username used in the SQL shell. You may not receive feedback from this command.
-- Type `psql` and your SQL shell should now open as your default user. Hooray! Continue to [final steps!](#final-steps).
+- Next, we need to create a default database for your new user and assign ownership of it to your new account. In the SQL shell, type the following: `CREATE DATABASE your-username-here;`, replacing "your-username-here" with your username. On success, you will receive the feedback `CREATE DATABASE`.
+- To change the owner of your database from the `postgres` user to your user, type the folliwing: `ALTER DATABASE your-username-here OWNER TO your-username-here`, replacing "your-username-here" with your username. On success, you will receive the feed back `ALTER DATABASE`.
+- Close your SQL shell with `\q`. Type `psql` again and your SQL shell should now open as your default user. Hooray! Continue to [final steps!](#final-steps).
 
 **If you are having issues with installation, please contact your instructor.**
 
