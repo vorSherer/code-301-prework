@@ -6,7 +6,7 @@ This doc will help you get Heroku CLI and PostgreSQL setup on your machince.
 
 Follow [these directions](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction) for installing the Heroku CLI. *Note: you only need to complete the "Introduction" and "Set Up" sections.*
 
-**Do not let Heroku install Git** otherwise you may need to reinstall the latest version of Git.
+**Do not let Heroku install Git 2.8.1** otherwise you may need to reinstall the latest version of Git.
 
 <img alt="Deselect Git in Heroku installer components" src="./heroku-install.png" width="499" />
 
