@@ -8,7 +8,7 @@ Follow [these directions](https://devcenter.heroku.com/articles/getting-started-
 
 **Do not let Heroku install Git** otherwise you may need to reinstall the latest version of Git.
 
-![Heroku Installer](./heroku-install.png)
+<img alt="Deselect Git in Heroku installer components" src="./heroku-install.png" width="499" />
 
 **Verify Installation**
 
