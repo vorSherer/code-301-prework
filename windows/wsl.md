@@ -47,7 +47,7 @@ This will add postgresql 10 to your repositories so you can install the lastest 
 - If successful, you will receive the feedback `ALTER ROLE`.
 - Next, we need to create a default database for your new user and assign ownership of it to your new account. In the SQL shell, type the following: `CREATE DATABASE your-username-here;`, replacing "your-username-here" with your username. On success, you will receive the feedback `CREATE DATABASE`.
 - To change the owner of your database from the `postgres` user to your user, type the folliwing: `ALTER DATABASE your-username-here OWNER TO your-username-here`, replacing "your-username-here" with your username. On success, you will receive the feed back `ALTER DATABASE`.
-- Close your SQL shell with `\q`. Type `psql` again and your SQL shell should now open as your default user. Hooray! Continue to [final steps!](#final-steps).
+- Close your SQL shell with `\q`. Type `psql` again and your SQL shell should now open as your default user. Hooray!
 
 ## Suggestion
 
