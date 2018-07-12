@@ -10,6 +10,7 @@ Note that the tasks below have a corresponding assignment to submit in your Canv
 
 ## Career Coaching Assignments
 
+1. Familiarize yourself with the [Career Coaching program](https://codefellows.github.io/common_curriculum/career_coaching), and review the [Code 301 Career Coaching Syllabus](https://codefellows.github.io/common_curriculum/career_coaching/Code_301/301_Career_Coaching_Syllabus). 
 1. Reflect on how to boost your [Professional Etiquette](https://codefellows.github.io/common_curriculum/career_coaching/Code_301/Professional_Etiquette)
 1. Build up your bank of [Behavioral Questions](https://codefellows.github.io/common_curriculum/career_coaching/Code_301/Behavioral_Questions)
 1. Practice your [Professional Pitch](https://codefellows.github.io/common_curriculum/career_coaching/Code_301/Professional_Pitch_Draft)
