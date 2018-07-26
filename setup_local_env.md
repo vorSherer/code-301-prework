@@ -34,14 +34,20 @@ For both Windows and Linux users, please follow the default installation instruc
 **Verifying Installation And Setting A Password**
 - You should be able to run the command `sudo -u postgres psql`. You will be asked for your administrator password - this is what you usually enter when you run `sudo` commands. This will log you into the psql prompt as the user postgres.
 - You should now have a prompt that looks like `postgres=#`. You can run SQL commands from here, which must end in semicolons.
-- If you were not prompted for a default user or password, we will set one using psql. If you type `\du`, you can get a list of users associated with PostgreSQL. You should see a single user, `postgres`. In order to give this user a password, enter the following command: `ALTER ROLE postgres PASSWORD 'your-password-here';`, replacing "your-password-here" with whatever you want it to be. Remember that your password must be wrapped in quotes. *Don't forget the semicolon*.
-- If successful, you will receive the feedback `ALTER ROLE`. Hooray! Continue to [final steps!](#final-steps).
+- If you were not prompted for a default user or password, we will set one using psql. If you type `\du`, you can get a list of users associated with PostgreSQL. You should see a single user, `postgres`. You will need to set up a new role for your machine's default user. This is the username that appears at the beginning of your terminal prompt, and when you log into your machine.
+- In your SQL shell, type the following: `CREATE ROLE your-username-here WITH LOGIN PASSWORD 'your-password-here';`, replacing "your-password-here" with whatever you want it to be. Remember that your password must be wrapped in quotes. The username should not be wrapped in quotes. *Don't forget the semicolon*.
+- If successful, you will receive the feedback `CREATE ROLE`.
+- Now we need to grant that user administrative control. In your SQL shell, type the following: `ALTER ROLE your-username-here WITH superuser;`, replacing "your-username-here" with the username you created a role for in the previous step.
+- If successful, you will receive the feedback `ALTER ROLE`.
+- Next, we need to create a default database for your new user and assign ownership of it to your new account. In the SQL shell, type the following: `CREATE DATABASE your-username-here;`, replacing "your-username-here" with your username. On success, you will receive the feedback `CREATE DATABASE`.
+- To change the owner of your database from the `postgres` user to your user, type the folliwing: `ALTER DATABASE your-username-here OWNER TO your-username-here`, replacing "your-username-here" with your username. On success, you will receive the feed back `ALTER DATABASE`.
+- Close your SQL shell with `\q`. Type `psql` again and your SQL shell should now open as your default user. Hooray! Continue to [final steps!](#final-steps).
 
 **If you are having issues with installation, please contact your instructor.**
 
 ### MacOS
 
-You should have already verified that you have Homebrew installed, from the Code 201 Prework. Use Homebrew to install PostgreSQL. 
+You should have already verified that you have Homebrew installed, from the Code 201 Prework. Use Homebrew to install PostgreSQL.
 
 To install PostgreSQL, open your Terminal, and enter:
 `brew update && brew install postgresql`
