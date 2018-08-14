@@ -55,7 +55,9 @@ Since typing out `sudo service postgres start` all the time can be tedious, and 
 
 1. Open a terminal and type `cd ~`, then type `nano .profile`. This will open your `.profile` which controls what your terminal does and looks like.
 1. Add this line next to any other aliases that you have:
-  - `alias pgstart='sudo service postgresql start'`
+```
+alias pgstart='sudo service postgresql start'
+```
 This will allow you to type `pgstart` to start running the psql service. This is an example of a Quality of Life enhancement, something that makes your life easier and faster as a developer. 
 
 You can change `pgstart` to what ever you want, but just be careful you don't overwrite something that postgres might use.
