@@ -23,8 +23,8 @@ We are installing this through the Ubuntu command line since we want this softwa
 1. Open a terminal (the Ubuntu app) and then go to the root of the Ubuntu Subsystem by typing `cd ~ `.
 2. Run `lsb_release -a` and make note of the `Codename` listed.
 3. Type `sudo nano ../../etc/apt/sources.list`. This will open a file on Ubuntu using the Nano editor.
-4. At the bottom of this file, paste in the line `deb http://apt.postgresql.org/pub/repos/apt/ CODENAME-pgdg main`, replacing CODENAME with the word listed in step 2.
-5. When that's done, press `ctrl + x` together to close the file, and press `y` when prompted to save your changes, and `enter` to finally close.
+4. At the bottom of this file, paste in the line `deb http://apt.postgresql.org/pub/repos/apt/ CODENAME-pgdg main`, replacing CODENAME with the word you noted in step 2.
+5. When that's done, press `ctrl + x` together to close the file, press `y` when prompted to save your changes, and `enter` to finally close.
 6. Next, copy these 2 lines and paste them into your terminal:
   ```
   wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
