@@ -21,19 +21,19 @@ We are installing this through the Ubuntu command line since we want this softwa
 
 ## Install
 1. Open a terminal (the Ubuntu app) and then go to the root of the Ubuntu Subsystem by typing `cd ~ `.
-2. Type `sudo nano ../../etc/apt/sources.list`. This will open a file on Ubuntu using the Nano editor.
-3. At the bottom of this file, paste in the line `deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main`.
-  - Change the last part of the line above from `xenial` to whichever version of Ubuntu you are running. You can find this by running `lsb_release -a` and finding the `Codename` listed.
-4. When that's done, press `ctrl + x` together to close the file, and press `y` when prompted to save your changes, and `enter` to finally close.
-5. Next, copy these 2 lines and paste them into your terminal:
+2. Run `lsb_release -a` and make note of the `Codename` listed.
+3. Type `sudo nano ../../etc/apt/sources.list`. This will open a file on Ubuntu using the Nano editor.
+4. At the bottom of this file, paste in the line `deb http://apt.postgresql.org/pub/repos/apt/ CODENAME-pgdg main`, replacing CODENAME with the word listed in step 2.
+5. When that's done, press `ctrl + x` together to close the file, and press `y` when prompted to save your changes, and `enter` to finally close.
+6. Next, copy these 2 lines and paste them into your terminal:
   ```
   wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
   sudo apt-get update
   ```
-  This will add postgresql 10 to your repositories so you can install the lastest version of Postgresql. Press `enter` when the last line pops up.
+  This will add postgresql 10 to your repositories so you can install the lastest version of Postgresql.
 
-6. After the update is complete, enter in the line `sudo apt-get install postgresql-10` and press `y` when prompted.
-7. To launch the postgres service, type `sudo service postgresql start`.
+7. After the update is complete, enter in the line `sudo apt-get install postgresql-10` and press `y` when prompted.
+8. To launch the postgres service, type `sudo service postgresql start`.
 
 ## Postgres User Setup
 
@@ -64,4 +64,4 @@ You can change `pgstart` to what ever you want, but just be careful you don't ov
 
 ### <a id="final-steps">Final Steps</a>
 
-When you are finished installing the Heroku CLI and PostgreSQL, please move here to complete your [Final Steps](../final_steps.md)
+When you are finished installing the Heroku CLI and PostgreSQL, please move here to complete your [Final Steps](../final_steps.md).
