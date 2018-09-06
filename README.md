@@ -19,7 +19,7 @@ Note that the tasks below have a corresponding assignment to submit in your Canv
 
 ### jQuery
 
-Complete the official introductory [jQuery Course](https://www.sololearn.com/Play/jQuery). The Canvas submission is a screenshot indicating that the course is complete.
+Complete the introductory [SoloLearn jQuery Course](https://www.sololearn.com/Play/jQuery). The Canvas submission is a screenshot indicating that the course is complete.
 
 ### Chocolate Pizza CSS
 
