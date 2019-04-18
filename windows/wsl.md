@@ -11,11 +11,11 @@ mkdir -p $wr/codefellows/301
 
 ## Install Heroku CLI
 
-Go to [this link](https://devcenter.heroku.com/articles/heroku-cli) and follow the **standalone** install instructions. This will install the Heroku CLI on your Ubuntu FS. This allows the CLI to run in a POSIX environment, fixing the `Heroku:pg push` issue that exists on Windows.
+Go to [this link](https://devcenter.heroku.com/articles/heroku-cli#standalone-installation) and follow the **standalone** install instructions (NOT the Windows instructions, NOT the Ubuntu instructions). This will install the Heroku CLI on your Ubuntu FS. This allows the CLI to run in a POSIX environment, fixing the `Heroku:pg push` issue that exists on Windows.
 
 **Verify Installation**
 
-From the command line, type `heroku --version` to verify that your Heroku installation was successful. Skip taking a screenshot (for your canvas assignment) until you can verify PostgreSQL as well. 
+From the command line, type `heroku --version` to verify that your Heroku installation was successful. Skip taking a screenshot (for your canvas assignment) until you can verify PostgreSQL as well.
 
 You are now done with the Heroku CLI! Next you will be installing PostgreSQL 10!
 
@@ -58,14 +58,14 @@ We are installing this through the Ubuntu command line since we want this softwa
 
 ## Suggestion
 
-Since typing out `sudo service postgres start` all the time can be tedious, and you'll need to run this when you restart your computer, we recommend you set up an alias for this. 
+Since typing out `sudo service postgres start` all the time can be tedious, and you'll need to run this when you restart your computer, we recommend you set up an alias for this.
 
 1. Open a terminal and type `cd ~`, then type `nano .profile`. This will open your `.profile` which controls what your terminal does and looks like.
 1. Add this line next to any other aliases that you have:
 ```
 alias pgstart='sudo service postgresql start'
 ```
-This will allow you to type `pgstart` to start running the psql service. This is an example of a Quality of Life enhancement, something that makes your life easier and faster as a developer. 
+This will allow you to type `pgstart` to start running the psql service. This is an example of a Quality of Life enhancement, something that makes your life easier and faster as a developer.
 
 You can change `pgstart` to what ever you want, but just be careful you don't overwrite something that postgres might use.
 
