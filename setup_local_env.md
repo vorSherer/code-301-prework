@@ -2,8 +2,6 @@
 
 Completion of the following setup tasks are all to be submitted in a single Canvas assignment. Keep a log of any errors or difficulties you encounter, and include those with your submission.
 
-**Windows Users: please go [here](./windows/wsl.md)**
-
 ### Create Directory
 
 Create a directory `~/codefellows/301/` to hold your work for this course, by running the command:
@@ -71,6 +69,8 @@ If you'd like to shut down your database server, you can run:
 
 `brew services stop postgresql`
 
-### <a id="final-steps">Final Steps</a>
+### <p id="final-steps">Final Steps</p>
 
-When you are finished installing the Heroku CLI and PostgreSQL, please move here to complete your [Final Steps](./final_steps.md)
+When you are finished installing the Heroku CLI and PostgreSQL, please move here to complete your final steps
+
+### [Next ⇒](./final_steps.md)

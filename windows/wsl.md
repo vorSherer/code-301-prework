@@ -1,4 +1,8 @@
-# Windows with the WSL
+## Setup of Your Laptop Dev Environment (Canvas assignment)
+
+Completion of the following setup tasks are all to be submitted in a single Canvas assignment. Keep a log of any errors or difficulties you encounter, and include those with your submission.
+
+## Windows with the WSL
 
 This doc assumes you are using the WSL in the way described in the 201 prework, or in [this guide](https://github.com/michaeltreat/Windows-Subsystem-For-Linux-Setup).
 
