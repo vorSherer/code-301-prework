@@ -57,9 +57,13 @@ We are installing this through the Ubuntu command line since we want this softwa
 - Close your SQL shell with `\q` or `ctrl-D`. Type `psql` again and your SQL shell should now open as your default user. Hooray!
 
 **If Using PostgreSQL Version > 11 OR Having Postgres Issues**
--Using your ubunutu WSL terminal, navigate to `/etc/postgresql/11/main` and open the postgresql.conf file in nano/vim/texteditor/ide.
--Use `ctrl-v` to skip a few pages down to find the fsync setting, it may be commented out.
--If uncommented, comment it back in and make sure `fsync` is set to off. Ex. `fsync=off`
+-Using your ubunutu WSL terminal, navigate to `/etc/postgresql/11/main` and open the postgresql.conf file with `code postgresql.conf`
+-Search for the setting `fsync`, it may be commented out.
+
+-If uncommented, comment it back in and make sure `fsync` is set to off. The full line should read exactly: 
+```
+ fsync=off # flush data to disk for crash safety  
+```
 
 ## Suggestion
 
