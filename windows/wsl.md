@@ -23,6 +23,11 @@ From the command line, type `heroku --version` to verify that your Heroku instal
 
 You are now done with the Heroku CLI! Next you will be installing PostgreSQL 10!
 
+## Install Nodemon
+In Code 301, Nodemon is a tool that is used to restart the server when changes are made in your server code.
+
+In your terminal, run npm i -g nodemon. Run the command nodemon --version to confirm proper installation of Nodemon.
+
 ## Install PostgreSQL using WSL
 
 This doc explains how to install PostgreSQL 10 for Windows WSL
