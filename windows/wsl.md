@@ -65,6 +65,15 @@ We are installing this through the Ubuntu command line since we want this softwa
 - To change the owner of your database from the `postgres` user to your user, type the folliwing: `ALTER DATABASE your-username-here OWNER TO your-username-here;`, replacing "your-username-here" with your username. On success, you will receive the feedback `ALTER DATABASE`.
 - Close your SQL shell with `\q` or `ctrl-D`. Type `psql` again and your SQL shell should now open as your default user. Hooray!
 
+**If Using PostgreSQL Version > 11 OR Having Postgres Issues**
+- Using your ubunutu WSL terminal, navigate to `/etc/postgresql/11/main` and open the postgresql.conf file with `code postgresql.conf`
+- Search for the setting `fsync`, it may be commented out.
+
+- The full line should read exactly: 
+```
+ fsync=off # flush data to disk for crash safety  
+```
+
 ## Suggestion
 
 Since typing out `sudo service postgres start` all the time can be tedious, and you'll need to run this when you restart your computer, we recommend you set up an alias for this.
